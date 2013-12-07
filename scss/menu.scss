@@ -1,0 +1,53 @@
+
+
+@import "_mixins.scss";
+
+$color: #eee;
+$bg-color: #333;
+
+#menu{
+    display: block;
+    float:left;
+    width:$menu-width;
+    background: $bg-color;
+    color: $color;
+    padding:20px 30px;
+
+    @include border-radius(22px);
+
+    a{
+        color: $color;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+
+    a[href|="http://gamejump.pl/"]{
+        color:#D33;
+    }
+
+    .code{
+        padding: 40px 20px;
+        display: block;
+        margin:auto;
+
+        .block{
+            padding-left: 30px;
+        }
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+
+        li{
+            list-style: none;
+        }
+    }
+
+
+}

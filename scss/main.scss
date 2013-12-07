@@ -1,0 +1,27 @@
+
+/*vars*/
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$menu-width: 300px;
+$menu-width-margin: 20px;
+
+/*mixins*/
+@import "_mixins.scss";
+
+/* imports */
+@import "menu.scss";
+@import "code.scss";
+@import "map.scss";
+
+
+/*body*/
+body{
+    font: 1em $font-stack;
+    color: $primary-color;
+
+}
+
+#main{
+    padding-left: $menu-width + $menu-width-margin;
+    text-align: center;
+}
