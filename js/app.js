@@ -28,7 +28,7 @@ require.config({
  *  App
  */
 
-define(["modules/map", "data/palette", "fn/waitInterval", "jquery"], function(map, palette, waitInterval) {
+require(["modules/map", "data/palette", "fn/waitInterval", "jquery"], function(map, palette, waitInterval) {
     $(function() {
         var $mymap = map.createRandomMap(13, 13, palette);
         var $cells = $mymap.find(".cell");
